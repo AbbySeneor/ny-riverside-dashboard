@@ -107,6 +107,37 @@ def enrich_tree_attributes(trees: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     return out
 
 
+def merge_raster_bounds_for_map(bounds_meta: dict) -> dict:
+    """Merge with any existing bounds.json so re-running 02 does not drop PNG map layers from 04/05."""
+    prev: dict = {}
+    if OUTPUTS["raster_bounds"].exists():
+        try:
+            prev = json.loads(OUTPUTS["raster_bounds"].read_text())
+        except Exception:
+            prev = {}
+    merged = {**prev, **bounds_meta}
+    png_keep = [
+        ("canopychange_2017_2021", "rasters/canopy_change.png"),
+        ("slope", "rasters/slope.png"),
+        ("lst", "rasters/lst.png"),
+        ("lc2010", "rasters/lc2010.png"),
+        ("lc2021", "rasters/lc2021.png"),
+    ]
+    for key, rel in png_keep:
+        if not (SITE_OUT / rel).is_file():
+            continue
+        old = prev.get(key)
+        if old and str(old.get("path", "")).endswith(".png") and old.get("bounds_4326"):
+            merged[key] = old
+    if (SITE_OUT / "rasters/lst.png").is_file() and not merged.get("lst"):
+        west, south, east, north = SITE_BBOX
+        merged["lst"] = {
+            "path": "rasters/lst.png",
+            "bounds_4326": [west - 0.005, south - 0.003, east + 0.005, north + 0.003],
+        }
+    return merged
+
+
 def clip_geojson(in_path: Path, out_path: Path, boundary_buffer_deg: float = 0.005) -> int:
     """Spatial filter a GeoJSON to features intersecting the buffered site bbox."""
     src_gdf = gpd.read_file(in_path).to_crs("EPSG:4326")
@@ -241,7 +272,8 @@ def main() -> None:
                 src.crs,
             )
 
-    OUTPUTS["raster_bounds"].write_text(json.dumps(bounds_meta, indent=2))
+    merged_bounds = merge_raster_bounds_for_map(bounds_meta)
+    OUTPUTS["raster_bounds"].write_text(json.dumps(merged_bounds, indent=2))
     print(f"\n✓ Raster bounds written → {OUTPUTS['raster_bounds'].relative_to(SITE_OUT.parent)}")
     print("\n→ Next: python 03_tree_canopy_stats.py")
 
