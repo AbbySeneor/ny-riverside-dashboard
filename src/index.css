@@ -1,0 +1,59 @@
+/* Global focus for keyboard users */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #6ee7c5;
+  outline-offset: 2px;
+}
+
+.dashboard-root select option {
+  background: #161d2f;
+  color: #f4f6fb;
+}
+
+.treelyon-popup .mapboxgl-popup-content {
+  border-radius: 10px;
+  background: #161d2f !important;
+  color: #f4f6fb !important;
+  border: 1px solid #1e293b !important;
+}
+
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  body {
+    background: #fff !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  header {
+    position: static !important;
+    border-bottom: 1px solid #ccc !important;
+  }
+
+  header nav,
+  .no-print {
+    display: none !important;
+  }
+
+  .mapboxgl-ctrl-top-right,
+  .mapboxgl-ctrl-bottom-right,
+  .mapboxgl-ctrl-bottom-left,
+  .mapboxgl-draw_ctrl-draw-btn {
+    display: none !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  footer {
+    page-break-before: always;
+    break-before: page;
+  }
+}

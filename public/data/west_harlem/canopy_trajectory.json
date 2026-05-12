@@ -1,0 +1,81 @@
+{
+  "site": "west_harlem \u00b7 7.5 ac",
+  "computed_at_utc": "2026-05-12T09:53:31.938223Z",
+  "epochs": [
+    {
+      "canopy_pct": 81.78,
+      "canopy_m2": 14437.5,
+      "total_m2": 17654.8,
+      "px_total": 757715,
+      "px_canopy": 619635,
+      "source": "landcover_2017_clipped.tif",
+      "year": 2017,
+      "ecosystem": {
+        "stormwater_gal_yr": 180938,
+        "stormwater_usd_yr": 1795,
+        "carbon_seq_tC_yr": 5.95,
+        "energy_kwh_yr": 21161,
+        "air_pollution_lb_yr": 202
+      }
+    },
+    {
+      "canopy_pct": 86.32,
+      "canopy_m2": 15239.1,
+      "total_m2": 17654.8,
+      "px_total": 757715,
+      "px_canopy": 654040,
+      "source": "landcover_2021_clipped.tif",
+      "year": 2021,
+      "ecosystem": {
+        "stormwater_gal_yr": 190983,
+        "stormwater_usd_yr": 1895,
+        "carbon_seq_tC_yr": 6.28,
+        "energy_kwh_yr": 22335,
+        "air_pollution_lb_yr": 214
+      }
+    },
+    {
+      "year": 2026,
+      "canopy_pct": 26.92,
+      "source": "Sentinel-2 NDVI > 0.55 threshold, July max",
+      "phase": "baseline",
+      "ecosystem": {
+        "stormwater_gal_yr": 59561,
+        "stormwater_usd_yr": 591,
+        "carbon_seq_tC_yr": 1.96,
+        "energy_kwh_yr": 6966,
+        "air_pollution_lb_yr": 67
+      }
+    },
+    {
+      "year": 2027,
+      "canopy_pct": 30.92,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 68410,
+        "carbon_seq_tC_yr": 2.25
+      }
+    },
+    {
+      "year": 2028,
+      "canopy_pct": 33.92,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 75048,
+        "carbon_seq_tC_yr": 2.47
+      }
+    },
+    {
+      "year": 2029,
+      "canopy_pct": 36.92,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 81686,
+        "carbon_seq_tC_yr": 2.69
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "method": "RPC Goatham clearing footprint (S2 phenology proxy empty)",
+  "invasive_pct_proxy": 0,
+  "polygon_count": 1,
+  "_caveat": "Replace with Phase-1 ground-truth invasive polygons."
+}

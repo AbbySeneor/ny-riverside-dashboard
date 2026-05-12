@@ -1,0 +1,8 @@
+{
+  "year": 2026,
+  "canopy_pct_estimated": 84.4,
+  "canopy_m2": 643661.1,
+  "total_m2": 762615.4,
+  "ndvi_threshold": 0.55,
+  "source": "Sentinel-2 NDVI > 0.55, July 2025"
+}

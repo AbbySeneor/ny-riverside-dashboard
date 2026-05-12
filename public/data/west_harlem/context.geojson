@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "name": "site_context_layers",
+  "crs": { "type": "name", "properties": { "name": "EPSG:4326" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "North River Wastewater Treatment Plant", "kind": "infrastructure" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-73.96050, 40.82380],
+          [-73.95830, 40.82380],
+          [-73.95830, 40.82720],
+          [-73.96050, 40.82720],
+          [-73.96050, 40.82380]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Riverbank State Park", "kind": "park" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-73.95940, 40.82720],
+          [-73.95710, 40.82720],
+          [-73.95710, 40.82960],
+          [-73.95940, 40.82960],
+          [-73.95940, 40.82720]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Goatham 2023-24 cleared zone", "kind": "goatham", "years": [2023, 2024] },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-73.95428, 40.82518],
+          [-73.95345, 40.82542],
+          [-73.95248, 40.82610],
+          [-73.95178, 40.82660],
+          [-73.95298, 40.82740],
+          [-73.95398, 40.82660],
+          [-73.95478, 40.82592],
+          [-73.95428, 40.82518]
+        ]]
+      }
+    }
+  ]
+}

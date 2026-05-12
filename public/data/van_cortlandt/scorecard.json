@@ -1,0 +1,89 @@
+{
+  "site": "van_cortlandt \u00b7 635.0 ac",
+  "computed_at_utc": "2026-05-12T10:05:13.551497Z",
+  "framework": "NAC Forest Management Framework \u2014 Rapid Site Assessment compatible",
+  "metrics": [
+    {
+      "metric": "Canopy cover",
+      "domain": "ecology",
+      "unit": "%",
+      "baseline": 93.29,
+      "target": 75,
+      "max": 100,
+      "inverse": false,
+      "source": "Sentinel-2 NDVI > 0.55 threshold, July max"
+    },
+    {
+      "metric": "Invasive dominance (proxy)",
+      "domain": "ecology",
+      "unit": "%",
+      "baseline": 0.2,
+      "target": 10,
+      "max": 100,
+      "inverse": true,
+      "source": "Sentinel-2 NDVI phenology proxy"
+    },
+    {
+      "metric": "Tree count (LiDAR-detected)",
+      "domain": "ecology",
+      "unit": "trees",
+      "baseline": 18986,
+      "target": null,
+      "max": null,
+      "inverse": false,
+      "source": "TNC/UVM 2021"
+    },
+    {
+      "metric": "Stems per hectare",
+      "domain": "ecology",
+      "unit": "stems/ha",
+      "baseline": 74.0,
+      "target": 300,
+      "max": 400,
+      "inverse": false,
+      "source": "TNC 2021 / area"
+    },
+    {
+      "metric": "Mean tree height",
+      "domain": "physical",
+      "unit": "m",
+      "baseline": 24.3,
+      "target": null,
+      "source": "TNC 2021 LiDAR"
+    },
+    {
+      "metric": "Site mean slope",
+      "domain": "physical",
+      "unit": "\u00b0",
+      "baseline": 4.6,
+      "target": null,
+      "source": "NYC 1-ft DEM"
+    },
+    {
+      "metric": "Steep zones (>20\u00b0)",
+      "domain": "physical",
+      "unit": "% of site",
+      "baseline": 1.0,
+      "target": null,
+      "source": "NYC 1-ft DEM, derived slope"
+    },
+    {
+      "metric": "Cooling vs Riverside Drive",
+      "domain": "climate",
+      "unit": "\u00b0F",
+      "baseline": 5.8,
+      "target": 6.0,
+      "max": 8,
+      "inverse": false,
+      "source": "Landsat 8/9 ST_B10 July composite"
+    },
+    {
+      "metric": "Cooling vs Henry Hudson Parkway",
+      "domain": "climate",
+      "unit": "\u00b0F",
+      "baseline": 5.5,
+      "target": null,
+      "source": "Landsat 8/9 ST_B10 July composite"
+    }
+  ]
+}

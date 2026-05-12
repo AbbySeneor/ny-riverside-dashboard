@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "van_cortlandt_context_layers",
+  "features": [],
+  "properties": {
+    "name": "Van Cortlandt Park",
+    "site_id": "van_cortlandt",
+    "area_acres": 635.0,
+    "note": "Context layers pending RPC / NAC field mapping."
+  }
+}

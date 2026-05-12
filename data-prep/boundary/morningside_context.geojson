@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "morningside_context_layers",
+  "features": [],
+  "properties": {
+    "name": "Morningside Park",
+    "site_id": "morningside",
+    "area_acres": 12.1,
+    "note": "Context layers pending RPC / NAC field mapping."
+  }
+}

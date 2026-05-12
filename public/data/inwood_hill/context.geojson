@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "inwood_hill_context_layers",
+  "features": [],
+  "properties": {
+    "name": "Inwood Hill Park",
+    "site_id": "inwood_hill",
+    "area_acres": 73.0,
+    "note": "Context layers pending RPC / NAC field mapping."
+  }
+}

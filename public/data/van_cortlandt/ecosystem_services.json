@@ -1,0 +1,24 @@
+{
+  "canopy_acres": 592.39,
+  "stormwater": {
+    "gallons_per_year": 17475549,
+    "usd_per_year": 173357
+  },
+  "carbon_sequestration": {
+    "tC_per_year": 574.62,
+    "tCO2e_per_year": 2108.85,
+    "usd_per_year": 107552
+  },
+  "air_pollution_removal": {
+    "lb_per_year": 19549,
+    "usd_per_year": 104782
+  },
+  "energy_savings": {
+    "kwh_per_year": 2043751,
+    "usd_per_year": 257513
+  },
+  "compensatory_value_total_usd": 20998516,
+  "method": "i-Tree Eco per-canopy-acre (USFS-NRS RB-117) \u00d7 computed canopy area",
+  "monetary_year": 2024,
+  "total_annual_usd": 643204
+}

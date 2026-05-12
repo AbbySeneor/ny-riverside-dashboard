@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.local
+.DS_Store
+data-prep/venv
+data-prep/raw
+data-prep/out
+data-prep/gee-service-account.json
+data-prep/gee-service-account-key.json
+**/__pycache__/
+*.pyc

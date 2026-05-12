@@ -1,0 +1,81 @@
+{
+  "site": "inwood_hill \u00b7 73.0 ac",
+  "computed_at_utc": "2026-05-12T09:59:35.754178Z",
+  "epochs": [
+    {
+      "canopy_pct": 74.57,
+      "canopy_m2": 571213.6,
+      "total_m2": 766010.2,
+      "px_total": 32875974,
+      "px_canopy": 24515606,
+      "source": "landcover_2017_clipped.tif",
+      "year": 2017,
+      "ecosystem": {
+        "stormwater_gal_yr": 1605865,
+        "stormwater_usd_yr": 15930,
+        "carbon_seq_tC_yr": 52.8,
+        "energy_kwh_yr": 187805,
+        "air_pollution_lb_yr": 1796
+      }
+    },
+    {
+      "canopy_pct": 75.54,
+      "canopy_m2": 578679.7,
+      "total_m2": 766010.2,
+      "px_total": 32875974,
+      "px_canopy": 24836038,
+      "source": "landcover_2021_clipped.tif",
+      "year": 2021,
+      "ecosystem": {
+        "stormwater_gal_yr": 1626754,
+        "stormwater_usd_yr": 16137,
+        "carbon_seq_tC_yr": 53.49,
+        "energy_kwh_yr": 190247,
+        "air_pollution_lb_yr": 1820
+      }
+    },
+    {
+      "year": 2026,
+      "canopy_pct": 84.4,
+      "source": "Sentinel-2 NDVI > 0.55 threshold, July max",
+      "phase": "baseline",
+      "ecosystem": {
+        "stormwater_gal_yr": 1817554,
+        "stormwater_usd_yr": 18030,
+        "carbon_seq_tC_yr": 59.76,
+        "energy_kwh_yr": 212561,
+        "air_pollution_lb_yr": 2033
+      }
+    },
+    {
+      "year": 2027,
+      "canopy_pct": 75,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 1615125,
+        "carbon_seq_tC_yr": 53.11
+      }
+    },
+    {
+      "year": 2028,
+      "canopy_pct": 75,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 1615125,
+        "carbon_seq_tC_yr": 53.11
+      }
+    },
+    {
+      "year": 2029,
+      "canopy_pct": 75,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 1615125,
+        "carbon_seq_tC_yr": 53.11
+      }
+    }
+  ]
+}

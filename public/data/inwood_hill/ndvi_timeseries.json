@@ -1,0 +1,572 @@
+{
+  "site": "West Harlem Forest 7.5 ac",
+  "source": "Sentinel-2 SR Harmonized (COPERNICUS/S2_SR_HARMONIZED)",
+  "computed_at_utc": "2026-05-11T22:12:56.448242Z",
+  "monthly": [
+    {
+      "year": 2017,
+      "month": 1,
+      "ndvi": 0.202
+    },
+    {
+      "year": 2017,
+      "month": 2,
+      "ndvi": 0.316
+    },
+    {
+      "year": 2017,
+      "month": 3,
+      "ndvi": 0.101
+    },
+    {
+      "year": 2017,
+      "month": 4,
+      "ndvi": 0.376
+    },
+    {
+      "year": 2017,
+      "month": 5,
+      "ndvi": 0.739
+    },
+    {
+      "year": 2017,
+      "month": 6,
+      "ndvi": 0.755
+    },
+    {
+      "year": 2017,
+      "month": 7,
+      "ndvi": 0.768
+    },
+    {
+      "year": 2017,
+      "month": 8,
+      "ndvi": 0.757
+    },
+    {
+      "year": 2017,
+      "month": 9,
+      "ndvi": 0.734
+    },
+    {
+      "year": 2017,
+      "month": 10,
+      "ndvi": 0.723
+    },
+    {
+      "year": 2017,
+      "month": 11,
+      "ndvi": 0.528
+    },
+    {
+      "year": 2017,
+      "month": 12,
+      "ndvi": 0.363
+    },
+    {
+      "year": 2018,
+      "month": 1,
+      "ndvi": 0.262
+    },
+    {
+      "year": 2018,
+      "month": 2,
+      "ndvi": 0.351
+    },
+    {
+      "year": 2018,
+      "month": 3,
+      "ndvi": 0.289
+    },
+    {
+      "year": 2018,
+      "month": 4,
+      "ndvi": 0.376
+    },
+    {
+      "year": 2018,
+      "month": 5,
+      "ndvi": 0.596
+    },
+    {
+      "year": 2018,
+      "month": 6,
+      "ndvi": 0.762
+    },
+    {
+      "year": 2018,
+      "month": 7,
+      "ndvi": 0.758
+    },
+    {
+      "year": 2018,
+      "month": 8,
+      "ndvi": 0.729
+    },
+    {
+      "year": 2018,
+      "month": 9,
+      "ndvi": 0.729
+    },
+    {
+      "year": 2018,
+      "month": 10,
+      "ndvi": 0.758
+    },
+    {
+      "year": 2018,
+      "month": 11,
+      "ndvi": 0.598
+    },
+    {
+      "year": 2018,
+      "month": 12,
+      "ndvi": 0.306
+    },
+    {
+      "year": 2019,
+      "month": 1,
+      "ndvi": 0.327
+    },
+    {
+      "year": 2019,
+      "month": 2,
+      "ndvi": 0.321
+    },
+    {
+      "year": 2019,
+      "month": 3,
+      "ndvi": 0.279
+    },
+    {
+      "year": 2019,
+      "month": 4,
+      "ndvi": 0.335
+    },
+    {
+      "year": 2019,
+      "month": 5,
+      "ndvi": 0.753
+    },
+    {
+      "year": 2019,
+      "month": 6,
+      "ndvi": 0.765
+    },
+    {
+      "year": 2019,
+      "month": 7,
+      "ndvi": 0.743
+    },
+    {
+      "year": 2019,
+      "month": 8,
+      "ndvi": 0.761
+    },
+    {
+      "year": 2019,
+      "month": 9,
+      "ndvi": 0.461
+    },
+    {
+      "year": 2019,
+      "month": 10,
+      "ndvi": 0.718
+    },
+    {
+      "year": 2019,
+      "month": 11,
+      "ndvi": 0.591
+    },
+    {
+      "year": 2019,
+      "month": 12,
+      "ndvi": 0.381
+    },
+    {
+      "year": 2020,
+      "month": 1,
+      "ndvi": 0.273
+    },
+    {
+      "year": 2020,
+      "month": 2,
+      "ndvi": 0.326
+    },
+    {
+      "year": 2020,
+      "month": 3,
+      "ndvi": 0.343
+    },
+    {
+      "year": 2020,
+      "month": 4,
+      "ndvi": 0.344
+    },
+    {
+      "year": 2020,
+      "month": 5,
+      "ndvi": 0.655
+    },
+    {
+      "year": 2020,
+      "month": 6,
+      "ndvi": 0.757
+    },
+    {
+      "year": 2020,
+      "month": 7,
+      "ndvi": 0.751
+    },
+    {
+      "year": 2020,
+      "month": 8,
+      "ndvi": 0.742
+    },
+    {
+      "year": 2020,
+      "month": 9,
+      "ndvi": 0.717
+    },
+    {
+      "year": 2020,
+      "month": 10,
+      "ndvi": 0.74
+    },
+    {
+      "year": 2020,
+      "month": 11,
+      "ndvi": 0.458
+    },
+    {
+      "year": 2020,
+      "month": 12,
+      "ndvi": 0.411
+    },
+    {
+      "year": 2021,
+      "month": 1,
+      "ndvi": 0.344
+    },
+    {
+      "year": 2021,
+      "month": 2,
+      "ndvi": 0.071
+    },
+    {
+      "year": 2021,
+      "month": 3,
+      "ndvi": 0.325
+    },
+    {
+      "year": 2021,
+      "month": 4,
+      "ndvi": 0.408
+    },
+    {
+      "year": 2021,
+      "month": 5,
+      "ndvi": 0.745
+    },
+    {
+      "year": 2021,
+      "month": 6,
+      "ndvi": 0.781
+    },
+    {
+      "year": 2021,
+      "month": 7,
+      "ndvi": 0.649
+    },
+    {
+      "year": 2021,
+      "month": 8,
+      "ndvi": 0.736
+    },
+    {
+      "year": 2021,
+      "month": 9,
+      "ndvi": 0.764
+    },
+    {
+      "year": 2021,
+      "month": 10,
+      "ndvi": 0.691
+    },
+    {
+      "year": 2021,
+      "month": 11,
+      "ndvi": 0.566
+    },
+    {
+      "year": 2021,
+      "month": 12,
+      "ndvi": 0.197
+    },
+    {
+      "year": 2022,
+      "month": 1,
+      "ndvi": 0.278
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "ndvi": 0.307
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "ndvi": 0.297
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "ndvi": 0.413
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "ndvi": 0.671
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "ndvi": 0.77
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "ndvi": 0.724
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "ndvi": 0.739
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "ndvi": 0.728
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "ndvi": 0.738
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "ndvi": 0.519
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "ndvi": 0.362
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "ndvi": 0.353
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "ndvi": 0.343
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "ndvi": 0.319
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "ndvi": 0.387
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "ndvi": 0.71
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "ndvi": 0.734
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "ndvi": 0.747
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "ndvi": 0.682
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "ndvi": 0.735
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "ndvi": 0.717
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "ndvi": 0.527
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "ndvi": 0.335
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "ndvi": 0.396
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "ndvi": 0.231
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "ndvi": 0.336
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "ndvi": 0.573
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "ndvi": 0.737
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "ndvi": 0.786
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "ndvi": 0.2
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "ndvi": 0.728
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "ndvi": 0.744
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "ndvi": 0.679
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "ndvi": 0.422
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "ndvi": 0.369
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "ndvi": 0.289
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "ndvi": 0.293
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "ndvi": 0.326
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "ndvi": 0.453
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "ndvi": 0.752
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "ndvi": 0.769
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "ndvi": 0.711
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "ndvi": 0.717
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "ndvi": 0.702
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "ndvi": 0.711
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "ndvi": 0.613
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "ndvi": 0.384
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "ndvi": 0.318
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "ndvi": 0.049
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "ndvi": 0.311
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "ndvi": 0.407
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "ndvi": 0.572
+    }
+  ]
+}

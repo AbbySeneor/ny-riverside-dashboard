@@ -1,0 +1,10 @@
+{
+  "hudson": 87.8,
+  "canopy_interior": 79.3,
+  "henry_hudson_pkwy": 84.8,
+  "riverside_drive": 85.1,
+  "cooling_vs_street_F": 5.8,
+  "cooling_vs_pkwy_F": 5.5,
+  "composite": "Landsat 8/9 C2L2, ST_B10, July+August median 2020-2025",
+  "computed_at_utc": "2026-05-11T22:15:09.817932Z"
+}

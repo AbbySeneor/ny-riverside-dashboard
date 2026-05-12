@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "nyc_forms_trees_clipped",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "tpcondition": "Dead", "stumpdiameter": null, "riskratingdate": "2022-12-19T17:14:00", "riskrating": "8", "objectid": "89631", "globalid": "7849F96D-8739-4FD6-A430-6EAA7256D512", "tpstructure": "Stump", "plantingspaceglobalid": "6D5A04A7-CF2F-48B1-92DA-77D6E0C68907", "createddate": "2015-03-04T05:00:00", "dbh": "18", "planteddate": null, "updateddate": "2023-03-28T12:27:57", "genusspecies": "Styphnolobium japonicum - Japanese pagoda tree" }, "geometry": { "type": "Point", "coordinates": [ -73.918891475887804, 40.866099356680991 ] } }
+]
+}

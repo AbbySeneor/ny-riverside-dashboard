@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "highbridge_context_layers",
+  "features": [],
+  "properties": {
+    "name": "Highbridge Park",
+    "site_id": "highbridge",
+    "area_acres": 18.7,
+    "note": "Context layers pending RPC / NAC field mapping."
+  }
+}

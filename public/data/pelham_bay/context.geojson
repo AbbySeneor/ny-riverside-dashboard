@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "pelham_bay_context_layers",
+  "features": [],
+  "properties": {
+    "name": "Pelham Bay Park",
+    "site_id": "pelham_bay",
+    "area_acres": 778.0,
+    "note": "Context layers pending RPC / NAC field mapping."
+  }
+}

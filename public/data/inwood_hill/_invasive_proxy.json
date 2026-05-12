@@ -1,0 +1,5 @@
+{
+  "method": "S2 NDVI Aug>0.70 AND May<0.50 (porcelain-berry/English ivy phenology)",
+  "invasive_pct_proxy": 0.0,
+  "_caveat": "Replace with Phase-1 ground-truth invasive polygons."
+}

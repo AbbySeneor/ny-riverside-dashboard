@@ -1,0 +1,81 @@
+{
+  "site": "van_cortlandt \u00b7 635.0 ac",
+  "computed_at_utc": "2026-05-12T10:00:03.259821Z",
+  "epochs": [
+    {
+      "canopy_pct": 69.1,
+      "canopy_m2": 3017802.9,
+      "total_m2": 4367282.7,
+      "px_total": 187437025,
+      "px_canopy": 129519437,
+      "source": "landcover_2017_clipped.tif",
+      "year": 2017,
+      "ecosystem": {
+        "stormwater_gal_yr": 12944158,
+        "stormwater_usd_yr": 128406,
+        "carbon_seq_tC_yr": 425.62,
+        "energy_kwh_yr": 1513808,
+        "air_pollution_lb_yr": 14480
+      }
+    },
+    {
+      "canopy_pct": 70.71,
+      "canopy_m2": 3088001.1,
+      "total_m2": 4367282.7,
+      "px_total": 187437025,
+      "px_canopy": 132532238,
+      "source": "landcover_2021_clipped.tif",
+      "year": 2021,
+      "ecosystem": {
+        "stormwater_gal_yr": 13245751,
+        "stormwater_usd_yr": 131398,
+        "carbon_seq_tC_yr": 435.54,
+        "energy_kwh_yr": 1549079,
+        "air_pollution_lb_yr": 14817
+      }
+    },
+    {
+      "year": 2026,
+      "canopy_pct": 93.29,
+      "source": "Sentinel-2 NDVI > 0.55 threshold, July max",
+      "phase": "baseline",
+      "ecosystem": {
+        "stormwater_gal_yr": 17475549,
+        "stormwater_usd_yr": 173357,
+        "carbon_seq_tC_yr": 574.62,
+        "energy_kwh_yr": 2043751,
+        "air_pollution_lb_yr": 19549
+      }
+    },
+    {
+      "year": 2027,
+      "canopy_pct": 75,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 14049375,
+        "carbon_seq_tC_yr": 461.96
+      }
+    },
+    {
+      "year": 2028,
+      "canopy_pct": 75,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 14049375,
+        "carbon_seq_tC_yr": 461.96
+      }
+    },
+    {
+      "year": 2029,
+      "canopy_pct": 75,
+      "phase": "projected",
+      "source": "NAC FMF 'good condition' restoration target",
+      "ecosystem": {
+        "stormwater_gal_yr": 14049375,
+        "carbon_seq_tC_yr": 461.96
+      }
+    }
+  ]
+}

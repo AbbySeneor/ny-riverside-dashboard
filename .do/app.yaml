@@ -1,0 +1,19 @@
+name: treelyon-riverside
+region: nyc
+static_sites:
+  - name: dashboard
+    github:
+      repo: AbbySeneor/ny-riverside-dashboard
+      branch: main
+      deploy_on_push: true
+    build_command: npm ci && npm run build
+    output_dir: dist
+    environment_slug: node-js
+    catchall_document: index.html
+    envs:
+      - key: VITE_MAPBOX_TOKEN
+        scope: BUILD_TIME
+        type: SECRET
+      - key: VITE_SITE_ID
+        value: west_harlem
+        scope: BUILD_TIME

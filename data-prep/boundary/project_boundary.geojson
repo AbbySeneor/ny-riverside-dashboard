@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "name": "west_harlem_forest_project_boundary",
+  "crs": { "type": "name", "properties": { "name": "EPSG:4326" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Harlem Forest Restoration",
+        "extent": "W143rd to W153rd Street",
+        "area_acres": 7.5,
+        "area_hectares": 3.035,
+        "partner": "Riverside Park Conservancy / NAC / NYC Parks",
+        "funder": "Treebed LLC",
+        "grant_usd": 3250000,
+        "duration_years": 3,
+        "start_year": 2026,
+        "note": "Approximate boundary. Refine with NYC ParkProperties (M071) clip after Phase 1 ground truth."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-73.95497, 40.82530],
+          [-73.95428, 40.82518],
+          [-73.95345, 40.82542],
+          [-73.95248, 40.82610],
+          [-73.95128, 40.82710],
+          [-73.94995, 40.82822],
+          [-73.94878, 40.82920],
+          [-73.94768, 40.83018],
+          [-73.94680, 40.83098],
+          [-73.94642, 40.83145],
+          [-73.94715, 40.83180],
+          [-73.94808, 40.83135],
+          [-73.94918, 40.83048],
+          [-73.95048, 40.82948],
+          [-73.95178, 40.82838],
+          [-73.95298, 40.82740],
+          [-73.95398, 40.82660],
+          [-73.95478, 40.82592],
+          [-73.95497, 40.82530]
+        ]]
+      }
+    }
+  ]
+}
