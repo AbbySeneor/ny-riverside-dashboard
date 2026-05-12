@@ -248,10 +248,16 @@ export default function MapView({
         },
       });
       try {
-        const b = turf.bbox(boundaryGj);
+        const boundaryBbox = turf.bbox(boundaryGj);
+        const treeBbox = data.trees?.features?.length
+          ? turf.bbox(geoJsonForMap(data.trees))
+          : null;
+        const fitBbox = data.siteId === 'west_harlem' && treeBbox
+          ? treeBbox
+          : boundaryBbox;
         m.fitBounds(
-          [[b[0], b[1]], [b[2], b[3]]],
-          { padding: 48, duration: 800, maxZoom: 17 },
+          [[fitBbox[0], fitBbox[1]], [fitBbox[2], fitBbox[3]]],
+          { padding: 48, duration: 800, maxZoom: data.siteId === 'west_harlem' ? 18 : 17 },
         );
       } catch {
         /* ignore */
@@ -598,16 +604,16 @@ export default function MapView({
     const lines = [
       `Area (acres): ${drawMetrics.acres.toFixed(2)}`,
       `Trees (centroids in polygon): ${drawMetrics.treeCount}`,
-      drawMetrics.meanHeightM != null ? `Mean height (m): ${drawMetrics.meanHeightM.toFixed(1)}` : 'Mean height (m): —',
+      drawMetrics.meanHeightM != null ? `Mean height (m): ${drawMetrics.meanHeightM.toFixed(1)}` : 'Mean height (m): -',
       drawMetrics.canopyPct != null
         ? `Canopy cover est. (%): ${drawMetrics.canopyPct.toFixed(1)}`
-        : 'Canopy cover est. (%): —',
+        : 'Canopy cover est. (%): -',
       drawMetrics.meanSlopeDeg != null
         ? `Mean slope (deg): ${drawMetrics.meanSlopeDeg.toFixed(1)} (tree-attributed)`
-        : 'Mean slope (deg): —',
+        : 'Mean slope (deg): -',
       drawMetrics.meanLstC != null
         ? `Mean LST (°C): ${drawMetrics.meanLstC.toFixed(2)} (tree-attributed)`
-        : 'Mean LST (°C): —',
+        : 'Mean LST (°C): -',
     ];
     void navigator.clipboard.writeText(lines.join('\n'));
   };
@@ -666,10 +672,10 @@ export default function MapView({
           <ul style={{ margin: 0, paddingLeft: 18, lineHeight: 1.5 }}>
             <li>{drawMetrics.acres.toFixed(2)} acres</li>
             <li>{drawMetrics.treeCount} trees</li>
-            <li>Mean height: {drawMetrics.meanHeightM != null ? `${drawMetrics.meanHeightM.toFixed(1)} m` : '—'}</li>
-            <li>Canopy % (est.): {drawMetrics.canopyPct != null ? `${drawMetrics.canopyPct.toFixed(1)}%` : '—'}</li>
-            <li>Mean slope: {drawMetrics.meanSlopeDeg != null ? `${drawMetrics.meanSlopeDeg.toFixed(1)}°` : '—'}</li>
-            <li>Mean LST: {drawMetrics.meanLstC != null ? `${drawMetrics.meanLstC.toFixed(2)} °C` : '—'}</li>
+            <li>Mean height: {drawMetrics.meanHeightM != null ? `${drawMetrics.meanHeightM.toFixed(1)} m` : '-'}</li>
+            <li>Canopy % (est.): {drawMetrics.canopyPct != null ? `${drawMetrics.canopyPct.toFixed(1)}%` : '-'}</li>
+            <li>Mean slope: {drawMetrics.meanSlopeDeg != null ? `${drawMetrics.meanSlopeDeg.toFixed(1)}°` : '-'}</li>
+            <li>Mean LST: {drawMetrics.meanLstC != null ? `${drawMetrics.meanLstC.toFixed(2)} °C` : '-'}</li>
           </ul>
           <p style={{ fontSize: 10, color: PALETTE.subtle, margin: '10px 0 8px', lineHeight: 1.45 }}>
             NDVI-based health is a remote-sensed proxy. Draw metrics use tree attributes where the pipeline joined them.

@@ -1,14 +1,14 @@
 {
   "site": "west_harlem \u00b7 7.5 ac",
-  "computed_at_utc": "2026-05-12T15:19:18.691914Z",
+  "computed_at_utc": "2026-05-12T22:14:18.674883Z",
   "framework": "NAC Forest Management Framework \u2014 Rapid Site Assessment compatible",
   "metrics": [
     {
       "metric": "Canopy cover",
       "domain": "ecology",
       "unit": "%",
-      "baseline": 26.92,
-      "target": 36.92,
+      "baseline": 85.77,
+      "target": 75,
       "max": 100,
       "inverse": false,
       "source": "Sentinel-2 NDVI > 0.55 threshold, July max"
@@ -27,7 +27,7 @@
       "metric": "Tree count (LiDAR-detected)",
       "domain": "ecology",
       "unit": "trees",
-      "baseline": 95,
+      "baseline": 240,
       "target": null,
       "max": null,
       "inverse": false,
@@ -37,7 +37,7 @@
       "metric": "Stems per hectare",
       "domain": "ecology",
       "unit": "stems/ha",
-      "baseline": 31.0,
+      "baseline": 79.0,
       "target": 300,
       "max": 400,
       "inverse": false,
@@ -47,7 +47,7 @@
       "metric": "Mean tree height",
       "domain": "physical",
       "unit": "m",
-      "baseline": 22.9,
+      "baseline": 20.5,
       "target": null,
       "source": "TNC 2021 LiDAR"
     },
@@ -55,7 +55,7 @@
       "metric": "Site mean slope",
       "domain": "physical",
       "unit": "\u00b0",
-      "baseline": 11.7,
+      "baseline": 12.1,
       "target": null,
       "source": "USGS 3DEP 10 m (Earth Engine)"
     },
@@ -63,7 +63,7 @@
       "metric": "Steep zones (>20\u00b0)",
       "domain": "physical",
       "unit": "% of site",
-      "baseline": 15.8,
+      "baseline": 15.3,
       "target": null,
       "source": "USGS 3DEP 10 m (Earth Engine), derived slope"
     },

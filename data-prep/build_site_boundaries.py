@@ -21,7 +21,9 @@ PARK_MATCH = {
     "pelham_bay": "Pelham Bay Park",
 }
 WEST_HARLEM_PARK = "Riverside Park"
+WEST_HARLEM_PARK_ID = "M072"
 MIN_BOUNDARY_PART_ACRES = 1.0
+WEST_HARLEM_MIN_BOUNDARY_PART_ACRES = 5.0
 
 
 def drop_sliver_polygons(geom, min_acres: float = MIN_BOUNDARY_PART_ACRES):
@@ -80,25 +82,20 @@ def build_west_harlem_boundary(
         print("⚠ west_harlem: no Riverside Park polygon found; kept legacy boundary")
         return
 
-    refined = gpd.overlay(legacy, riverside, how="intersection")
-    if refined.empty:
-        shutil.copy2(legacy_boundary, west_boundary)
-        if legacy_context.exists():
-            shutil.copy2(legacy_context, west_context)
-        print("⚠ west_harlem: Riverside Park did not intersect legacy sketch; kept legacy boundary")
-        return
-
-    geom = drop_sliver_polygons(unary_union(refined.geometry))
+    m072 = riverside[riverside["gispropnum"].str.fullmatch(WEST_HARLEM_PARK_ID, case=False, na=False)]
+    sections = m072 if not m072.empty else riverside
+    geom = drop_sliver_polygons(unary_union(sections.geometry), WEST_HARLEM_MIN_BOUNDARY_PART_ACRES)
     acres = gpd.GeoDataFrame(geometry=[geom], crs="EPSG:4326").to_crs("EPSG:2263").geometry.area.iloc[0] / 4046.86
     legacy_props = legacy.drop(columns="geometry").iloc[0].to_dict()
-    park_ids = ",".join(sorted({str(v) for v in refined["gispropnum"].dropna().unique()}))
+    park_ids = ",".join(sorted({str(v) for v in sections["gispropnum"].dropna().unique()}))
     feature = {
         **legacy_props,
         "site_id": "west_harlem",
         "area_acres": round(float(acres), 2),
+        "area_hectares": round(float(acres) * 0.404685642, 3),
         "grant_acres": legacy_props.get("area_acres", SITES["west_harlem"]["acres"]),
-        "source": f"RPC restoration sketch ∩ NYC Parks Riverside ({park_ids})",
-        "note": "Boundary aligned to NYC Parks Riverside footprint within the RPC restoration corridor.",
+        "source": f"NYC Parks Riverside ({park_ids})",
+        "note": "West Harlem footprint uses the full NYC Parks Riverside M072 polygon so LiDAR tree counts match other park sites.",
     }
     gpd.GeoDataFrame([feature], geometry=[geom], crs="EPSG:4326").to_file(west_boundary, driver="GeoJSON")
     if legacy_context.exists():
