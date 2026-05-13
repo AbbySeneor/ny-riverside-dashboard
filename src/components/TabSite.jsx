@@ -60,25 +60,25 @@ export default function TabSite({ data }) {
     return [
       {
         label: 'Trees · LiDAR-detected',
-        value: ts?.count?.toLocaleString() ?? '—',
+        value: ts?.count?.toLocaleString() ?? '-',
         unit: '',
         note: ts?.mean_height_m ? `mean height ${ts.mean_height_m}m · max ${ts.max_height_m}m` : 'TNC 2021',
       },
       {
         label: 'Canopy cover',
-        value: baseline?.canopy_pct ?? '—',
+        value: baseline?.canopy_pct ?? '-',
         unit: '%',
         note: baseline?.source ?? 'baseline',
       },
       {
         label: 'Stems per hectare',
-        value: ts?.stems_per_ha ?? '—',
+        value: ts?.stems_per_ha ?? '-',
         unit: '',
         note: 'NAC FMF target 300/ha',
       },
       {
         label: 'Cooling vs Riv. Drive',
-        value: lst?.cooling_vs_street_F ?? '—',
+        value: lst?.cooling_vs_street_F ?? '-',
         unit: '°F',
         note: lst?.composite ? 'Landsat July composite' : 'pending GEE compute',
       },
@@ -86,7 +86,7 @@ export default function TabSite({ data }) {
         label: 'Annual ecosystem $',
         value: eco?.total_annual_usd
           ? `$${(eco.total_annual_usd / 1000).toFixed(0)}K`
-          : '—',
+          : '-',
         unit: '',
         note: 'i-Tree Eco × computed canopy',
       },
@@ -94,7 +94,7 @@ export default function TabSite({ data }) {
         label: 'Compensatory value',
         value: eco?.compensatory_value_total_usd
           ? `$${(eco.compensatory_value_total_usd / 1e6).toFixed(2)}M`
-          : '—',
+          : '-',
         unit: '',
         note: `${ts?.count ?? 0} trees × $1,106 (CTLA)`,
       },
@@ -208,7 +208,7 @@ export default function TabSite({ data }) {
               ACTIVE LAYERS
             </div>
             {[...active].length === 0
-              ? <span style={{ color: PALETTE.subtle }}>—</span>
+              ? <span style={{ color: PALETTE.subtle }}>-</span>
               : [...active].map(k => (
                   <div key={k} style={{ marginTop: 2 }}>· {k}</div>
                 ))}
@@ -309,15 +309,15 @@ export default function TabSite({ data }) {
               SELECTED TREE
             </div>
             <div style={{ fontFamily: FONTS.display, fontSize: 22, marginTop: 4 }}>
-              #{selectedTree.properties?.site_id ?? '—'}
+              #{selectedTree.properties?.site_id ?? '-'}
             </div>
           </div>
           <div style={{
             fontFamily: FONTS.mono, fontSize: 11, color: PALETTE.subtle,
             letterSpacing: '0.05em', display: 'flex', gap: 24,
           }}>
-            <span>HEIGHT · {selectedTree.properties?.height_m ?? '—'}m</span>
-            <span>CROWN · {selectedTree.properties?.crown_diameter ?? '—'}m</span>
+            <span>HEIGHT · {selectedTree.properties?.height_m ?? '-'}m</span>
+            <span>CROWN · {selectedTree.properties?.crown_diameter ?? '-'}m</span>
             <span>HEALTH · {selectedTree.properties?.health_class ?? 'unknown'}</span>
           </div>
           <button onClick={() => setSelectedTree(null)} style={{

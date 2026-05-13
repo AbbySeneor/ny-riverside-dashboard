@@ -45,7 +45,7 @@ export default function TabHeatEquity({ data }) {
         margin: '0 0 28px',
       }}>
         Surrounding MODZCTAs on this map include NYC DOHMH Heat Vulnerability tiers
-        4–5. Heat is the leading weather-related cause of death in NYC. This chart
+        4-5. Heat is the leading weather-related cause of death in NYC. This chart
         ties Landsat-derived temperatures on the
         {acres != null ? `${acres}-acre` : 'site'} footprint to that public-health context.
       </p>
@@ -66,7 +66,7 @@ export default function TabHeatEquity({ data }) {
               fontFamily: FONTS.mono, fontSize: 10, letterSpacing: '0.1em',
             }}>
               <div style={{ color: PALETTE.sage, fontSize: 9, marginBottom: 4 }}>
-                LANDSAT 8/9 · ST_B10 · JUL MEDIAN 2020–2025
+                LANDSAT 8/9 · ST_B10 · JUL MEDIAN 2020-2025
               </div>
               <div>BLUE ← COOL · WARM → RED</div>
             </div>
@@ -126,7 +126,7 @@ export default function TabHeatEquity({ data }) {
               lineHeight: 1.35, fontStyle: 'italic',
             }}>
               "Forested natural areas average 6°F cooler than surrounding
-              neighborhoods — 3× the cooling of individual street trees."
+              neighborhoods - 3× the cooling of individual street trees."
             </div>
             <div style={{ fontSize: 11, color: PALETTE.subtle, lineHeight: 1.5 }}>
               Current site cooling: <strong style={{ color: PALETTE.ink }}>
@@ -146,7 +146,7 @@ export default function TabHeatEquity({ data }) {
               lineHeight: 1.5, fontStyle: 'italic',
             }}>
               Hoylman-Sigal and Council Majority Leader Abreu now have a
-              quantified cooling claim for West Harlem — sourceable,
+              quantified cooling claim for West Harlem - sourceable,
               reproducible, updated every summer.
             </div>
           </div>
@@ -167,7 +167,7 @@ function TempTile({ label, temp, color }) {
         fontFamily: FONTS.display, fontSize: 28, fontWeight: 400,
         lineHeight: 1, color, letterSpacing: '-0.02em',
       }}>
-        {temp ?? '—'}<span style={{ fontSize: 13, color: PALETTE.subtle, marginLeft: 2 }}>°F</span>
+        {temp ?? '-'}<span style={{ fontSize: 13, color: PALETTE.subtle, marginLeft: 2 }}>°F</span>
       </div>
     </div>
   );

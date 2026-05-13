@@ -66,7 +66,7 @@ export default function TabCanopy({ data }) {
         fontFamily: FONTS.display, fontSize: 32, fontWeight: 400,
         letterSpacing: '-0.02em', margin: '12px 0 14px', lineHeight: 1.1,
       }}>
-        Canopy cover {earliest?.canopy_pct ?? '—'}% → {baseline?.canopy_pct ?? '—'}%{' '}
+        Canopy cover {earliest?.canopy_pct ?? '-'}% → {baseline?.canopy_pct ?? '-'}%{' '}
         {canopyDelta != null && (
           <span style={{
             color: canopyDelta < 0 ? PALETTE.coral : PALETTE.moss,
@@ -108,7 +108,7 @@ export default function TabCanopy({ data }) {
                 fontFamily: FONTS.display, fontSize: 48, fontWeight: 300,
                 color: selected?.phase === 'projected' ? PALETTE.moss : PALETTE.ink,
               }}>
-                {selected?.canopy_pct ?? '—'}%
+                {selected?.canopy_pct ?? '-'}%
               </div>
               <div style={{
                 fontSize: 11, color: PALETTE.subtle,

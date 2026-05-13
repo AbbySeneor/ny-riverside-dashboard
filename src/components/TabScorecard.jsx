@@ -36,7 +36,7 @@ export default function TabScorecard({ data }) {
         fontFamily: FONTS.display, fontSize: 32, fontWeight: 400,
         letterSpacing: '-0.02em', margin: '12px 0 14px', lineHeight: 1.1,
       }}>
-        Metrics Treebed can hold us to.
+        NAC baseline metrics and year-3 targets
       </h2>
       <p style={{
         fontSize: 14, lineHeight: 1.6, maxWidth: 760, color: PALETTE.bodyMuted,
@@ -92,7 +92,7 @@ export default function TabScorecard({ data }) {
                   fontFamily: FONTS.display, fontSize: 20,
                   color: m.inverse && m.baseline > 20 ? PALETTE.coral : PALETTE.ink,
                 }}>
-                  {m.baseline ?? '—'}
+                  {m.baseline ?? '-'}
                   <span style={{ fontSize: 11, color: PALETTE.subtle, marginLeft: 3 }}>
                     {m.unit}
                   </span>
@@ -101,7 +101,7 @@ export default function TabScorecard({ data }) {
                   fontFamily: FONTS.display, fontSize: 20,
                   color: hasTarget ? PALETTE.moss : PALETTE.subtle,
                 }}>
-                  {m.target ?? '—'}
+                  {m.target ?? '-'}
                   <span style={{ fontSize: 11, color: PALETTE.subtle, marginLeft: 3 }}>
                     {m.unit}
                   </span>
@@ -249,7 +249,7 @@ function EcoStat({ label, value, note, color, emphasis }) {
         fontSize: emphasis ? 30 : 22, fontWeight: 400,
         lineHeight: 1, color, letterSpacing: '-0.02em',
       }}>
-        ${value ? value.toLocaleString() : '—'}
+        ${value ? value.toLocaleString() : '-'}
       </div>
       <div style={{
         fontSize: 10, color: PALETTE.subtle, marginTop: 4,

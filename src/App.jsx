@@ -278,7 +278,6 @@ function Header({ tab, setTab, siteId, setSiteId }) {
           <span style={{ fontFamily: FONTS.mono, letterSpacing: '0.04em' }}>
             {acres} acres · {siteId}
           </span>
-          <span style={{ marginLeft: 10, opacity: 0.85 }}>Pipeline boundary from site GeoJSON · [ ] switch tab</span>
         </div>
       )}
     </header>
@@ -300,7 +299,7 @@ function DataMissingBanner({ errors, siteId, onCopyCommand }) {
       }}
     >
       <strong>{errors.length} data files missing</strong>
-      {' — '}
+      {' - '}
       run the prep pipeline for <strong>{siteId}</strong>, then{' '}
       <code style={{ background: PALETTE.bannerCodeBg, padding: '2px 6px', color: PALETTE.bannerWarnText }}>
         npm run sync:data
@@ -363,16 +362,14 @@ function Footer() {
       >
       <div>
         <strong style={{ color: PALETTE.ink }}>Data sources:</strong>{' '}
-        TNC/UVM SAL 2021 (Zenodo 14053441) · NYC Open Data 2010–2017 land cover ·
+        TNC/UVM SAL 2021 (Zenodo 14053441) · NYC Open Data 2010-2017 land cover ·
         NYC 1-ft DEM · Sentinel-2 SR Harmonized · Landsat 8/9 C2L2 ·
         NYC DOHMH HVI · NAC Forest Management Framework · i-Tree Eco unit values (USFS-NRS RB-117).
       </div>
       <div>
         <strong style={{ color: PALETTE.ink }}>Treelyon</strong>
         <br />
-        abby@treelyon.com
-        <br />
-        +33 7 45 16 44 41
+        info@treelyon.com
       </div>
       <div>
         <strong style={{ color: PALETTE.ink }}>Methodology</strong>

@@ -135,7 +135,7 @@ export async function exportPDF(scorecard, ecosystem, treeSummary, lstZones, das
     pdf.text(label, 48, y);
     pdf.setTextColor(26, 31, 26);
     pdf.setFontSize(20);
-    pdf.text(`${val ?? '—'}${unit}`, 240, y);
+    pdf.text(`${val ?? '-'}${unit}`, 240, y);
     y += 32;
   });
 
@@ -168,9 +168,9 @@ export async function exportPDF(scorecard, ecosystem, treeSummary, lstZones, das
       pdf.setFontSize(11);
       pdf.text(m.metric, 48, row);
       pdf.setFontSize(13);
-      pdf.text(`${m.baseline ?? '—'}${m.unit || ''}`, 360, row);
+      pdf.text(`${m.baseline ?? '-'}${m.unit || ''}`, 360, row);
       pdf.setTextColor(61, 107, 61);
-      pdf.text(`${m.target ?? '—'}${m.unit || ''}`, 460, row);
+      pdf.text(`${m.target ?? '-'}${m.unit || ''}`, 460, row);
       pdf.setFontSize(8);
       pdf.setTextColor(138, 138, 130);
       const src = (m.source || '').slice(0, 30);

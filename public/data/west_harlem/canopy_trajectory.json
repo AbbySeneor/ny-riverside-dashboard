@@ -1,6 +1,6 @@
 {
   "site": "west_harlem \u00b7 7.5 ac",
-  "computed_at_utc": "2026-05-12T09:53:31.938223Z",
+  "computed_at_utc": "2026-05-12T21:45:13.081959Z",
   "epochs": [
     {
       "canopy_pct": 81.78,
@@ -19,62 +19,62 @@
       }
     },
     {
-      "canopy_pct": 86.32,
-      "canopy_m2": 15239.1,
-      "total_m2": 17654.8,
-      "px_total": 757715,
-      "px_canopy": 654040,
+      "canopy_pct": 71.79,
+      "canopy_m2": 38924.1,
+      "total_m2": 54217.7,
+      "px_total": 2326938,
+      "px_canopy": 1670562,
       "source": "landcover_2021_clipped.tif",
       "year": 2021,
       "ecosystem": {
-        "stormwater_gal_yr": 190983,
-        "stormwater_usd_yr": 1895,
-        "carbon_seq_tC_yr": 6.28,
-        "energy_kwh_yr": 22335,
-        "air_pollution_lb_yr": 214
+        "stormwater_gal_yr": 158835,
+        "stormwater_usd_yr": 1576,
+        "carbon_seq_tC_yr": 5.22,
+        "energy_kwh_yr": 18576,
+        "air_pollution_lb_yr": 178
       }
     },
     {
       "year": 2026,
-      "canopy_pct": 26.92,
+      "canopy_pct": 85.77,
       "source": "Sentinel-2 NDVI > 0.55 threshold, July max",
       "phase": "baseline",
       "ecosystem": {
-        "stormwater_gal_yr": 59561,
-        "stormwater_usd_yr": 591,
-        "carbon_seq_tC_yr": 1.96,
-        "energy_kwh_yr": 6966,
-        "air_pollution_lb_yr": 67
+        "stormwater_gal_yr": 189766,
+        "stormwater_usd_yr": 1882,
+        "carbon_seq_tC_yr": 6.24,
+        "energy_kwh_yr": 22193,
+        "air_pollution_lb_yr": 212
       }
     },
     {
       "year": 2027,
-      "canopy_pct": 30.92,
+      "canopy_pct": 75,
       "phase": "projected",
       "source": "NAC FMF 'good condition' restoration target",
       "ecosystem": {
-        "stormwater_gal_yr": 68410,
-        "carbon_seq_tC_yr": 2.25
+        "stormwater_gal_yr": 165938,
+        "carbon_seq_tC_yr": 5.46
       }
     },
     {
       "year": 2028,
-      "canopy_pct": 33.92,
+      "canopy_pct": 75,
       "phase": "projected",
       "source": "NAC FMF 'good condition' restoration target",
       "ecosystem": {
-        "stormwater_gal_yr": 75048,
-        "carbon_seq_tC_yr": 2.47
+        "stormwater_gal_yr": 165938,
+        "carbon_seq_tC_yr": 5.46
       }
     },
     {
       "year": 2029,
-      "canopy_pct": 36.92,
+      "canopy_pct": 75,
       "phase": "projected",
       "source": "NAC FMF 'good condition' restoration target",
       "ecosystem": {
-        "stormwater_gal_yr": 81686,
-        "carbon_seq_tC_yr": 2.69
+        "stormwater_gal_yr": 165938,
+        "carbon_seq_tC_yr": 5.46
       }
     }
   ]
