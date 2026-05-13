@@ -1,152 +1,152 @@
 {
-  "site": "West Harlem Forest 7.5 ac",
+  "site": "west_harlem \u00b7 7.5 ac",
   "source": "Sentinel-2 SR Harmonized (COPERNICUS/S2_SR_HARMONIZED)",
-  "computed_at_utc": "2026-05-12T14:04:26.900097Z",
+  "computed_at_utc": "2026-05-13T23:05:08.309280Z",
   "monthly": [
     {
       "year": 2017,
       "month": 1,
-      "ndvi": 0.209
+      "ndvi": 0.183
     },
     {
       "year": 2017,
       "month": 2,
-      "ndvi": 0.319
+      "ndvi": 0.275
     },
     {
       "year": 2017,
       "month": 3,
-      "ndvi": 0.14
+      "ndvi": 0.124
     },
     {
       "year": 2017,
       "month": 4,
-      "ndvi": 0.339
+      "ndvi": 0.3
     },
     {
       "year": 2017,
       "month": 5,
-      "ndvi": 0.704
+      "ndvi": 0.602
     },
     {
       "year": 2017,
       "month": 6,
-      "ndvi": 0.742
+      "ndvi": 0.637
     },
     {
       "year": 2017,
       "month": 7,
-      "ndvi": 0.741
+      "ndvi": 0.637
     },
     {
       "year": 2017,
       "month": 8,
-      "ndvi": 0.747
+      "ndvi": 0.644
     },
     {
       "year": 2017,
       "month": 9,
-      "ndvi": 0.717
+      "ndvi": 0.616
     },
     {
       "year": 2017,
       "month": 10,
-      "ndvi": 0.758
+      "ndvi": 0.663
     },
     {
       "year": 2017,
       "month": 11,
-      "ndvi": 0.476
+      "ndvi": 0.42
     },
     {
       "year": 2017,
       "month": 12,
-      "ndvi": 0.331
+      "ndvi": 0.278
     },
     {
       "year": 2018,
       "month": 1,
-      "ndvi": 0.28
+      "ndvi": 0.23
     },
     {
       "year": 2018,
       "month": 2,
-      "ndvi": 0.379
+      "ndvi": 0.325
     },
     {
       "year": 2018,
       "month": 3,
+      "ndvi": 0.274
+    },
+    {
+      "year": 2018,
+      "month": 4,
+      "ndvi": 0.298
+    },
+    {
+      "year": 2018,
+      "month": 5,
+      "ndvi": 0.431
+    },
+    {
+      "year": 2018,
+      "month": 6,
+      "ndvi": 0.64
+    },
+    {
+      "year": 2018,
+      "month": 7,
+      "ndvi": 0.614
+    },
+    {
+      "year": 2018,
+      "month": 8,
+      "ndvi": 0.623
+    },
+    {
+      "year": 2018,
+      "month": 9,
+      "ndvi": 0.635
+    },
+    {
+      "year": 2018,
+      "month": 10,
+      "ndvi": 0.691
+    },
+    {
+      "year": 2018,
+      "month": 11,
+      "ndvi": 0.605
+    },
+    {
+      "year": 2018,
+      "month": 12,
+      "ndvi": 0.254
+    },
+    {
+      "year": 2019,
+      "month": 1,
+      "ndvi": 0.313
+    },
+    {
+      "year": 2019,
+      "month": 2,
+      "ndvi": 0.281
+    },
+    {
+      "year": 2019,
+      "month": 3,
+      "ndvi": 0.241
+    },
+    {
+      "year": 2019,
+      "month": 4,
       "ndvi": 0.316
     },
     {
-      "year": 2018,
-      "month": 4,
-      "ndvi": 0.332
-    },
-    {
-      "year": 2018,
-      "month": 5,
-      "ndvi": 0.505
-    },
-    {
-      "year": 2018,
-      "month": 6,
-      "ndvi": 0.75
-    },
-    {
-      "year": 2018,
-      "month": 7,
-      "ndvi": 0.706
-    },
-    {
-      "year": 2018,
-      "month": 8,
-      "ndvi": 0.706
-    },
-    {
-      "year": 2018,
-      "month": 9,
-      "ndvi": 0.733
-    },
-    {
-      "year": 2018,
-      "month": 10,
-      "ndvi": 0.788
-    },
-    {
-      "year": 2018,
-      "month": 11,
-      "ndvi": 0.676
-    },
-    {
-      "year": 2018,
-      "month": 12,
-      "ndvi": 0.279
-    },
-    {
-      "year": 2019,
-      "month": 1,
-      "ndvi": 0.357
-    },
-    {
-      "year": 2019,
-      "month": 2,
-      "ndvi": 0.334
-    },
-    {
-      "year": 2019,
-      "month": 3,
-      "ndvi": 0.264
-    },
-    {
-      "year": 2019,
-      "month": 4,
-      "ndvi": 0.352
-    },
-    {
       "year": 2019,
       "month": 5,
-      "ndvi": 0.708
+      "ndvi": 0.615
     },
     {
       "year": 2019,
@@ -156,32 +156,32 @@
     {
       "year": 2019,
       "month": 7,
-      "ndvi": 0.692
+      "ndvi": 0.596
     },
     {
       "year": 2019,
       "month": 8,
-      "ndvi": 0.746
+      "ndvi": 0.653
     },
     {
       "year": 2019,
       "month": 9,
-      "ndvi": 0.682
+      "ndvi": 0.573
     },
     {
       "year": 2019,
       "month": 10,
-      "ndvi": 0.751
+      "ndvi": 0.66
     },
     {
       "year": 2019,
       "month": 11,
-      "ndvi": 0.622
+      "ndvi": 0.536
     },
     {
       "year": 2019,
       "month": 12,
-      "ndvi": 0.357
+      "ndvi": 0.308
     },
     {
       "year": 2020,
@@ -191,382 +191,382 @@
     {
       "year": 2020,
       "month": 2,
+      "ndvi": 0.266
+    },
+    {
+      "year": 2020,
+      "month": 3,
+      "ndvi": 0.273
+    },
+    {
+      "year": 2020,
+      "month": 4,
+      "ndvi": 0.331
+    },
+    {
+      "year": 2020,
+      "month": 5,
+      "ndvi": 0.505
+    },
+    {
+      "year": 2020,
+      "month": 6,
+      "ndvi": 0.616
+    },
+    {
+      "year": 2020,
+      "month": 7,
+      "ndvi": 0.679
+    },
+    {
+      "year": 2020,
+      "month": 8,
+      "ndvi": 0.649
+    },
+    {
+      "year": 2020,
+      "month": 9,
+      "ndvi": 0.641
+    },
+    {
+      "year": 2020,
+      "month": 10,
+      "ndvi": 0.692
+    },
+    {
+      "year": 2020,
+      "month": 11,
+      "ndvi": 0.523
+    },
+    {
+      "year": 2020,
+      "month": 12,
+      "ndvi": 0.339
+    },
+    {
+      "year": 2021,
+      "month": 1,
       "ndvi": 0.31
     },
     {
-      "year": 2020,
-      "month": 3,
-      "ndvi": 0.297
-    },
-    {
-      "year": 2020,
-      "month": 4,
-      "ndvi": 0.388
-    },
-    {
-      "year": 2020,
-      "month": 5,
-      "ndvi": 0.607
-    },
-    {
-      "year": 2020,
-      "month": 6,
-      "ndvi": 0.713
-    },
-    {
-      "year": 2020,
-      "month": 7,
-      "ndvi": 0.777
-    },
-    {
-      "year": 2020,
-      "month": 8,
-      "ndvi": 0.742
-    },
-    {
-      "year": 2020,
-      "month": 9,
-      "ndvi": 0.741
-    },
-    {
-      "year": 2020,
-      "month": 10,
-      "ndvi": 0.779
-    },
-    {
-      "year": 2020,
-      "month": 11,
-      "ndvi": 0.605
-    },
-    {
-      "year": 2020,
-      "month": 12,
-      "ndvi": 0.38
-    },
-    {
-      "year": 2021,
-      "month": 1,
-      "ndvi": 0.352
-    },
-    {
       "year": 2021,
       "month": 2,
-      "ndvi": 0.115
+      "ndvi": 0.091
     },
     {
       "year": 2021,
       "month": 3,
-      "ndvi": 0.323
+      "ndvi": 0.288
     },
     {
       "year": 2021,
       "month": 4,
-      "ndvi": 0.37
+      "ndvi": 0.344
     },
     {
       "year": 2021,
       "month": 5,
-      "ndvi": 0.701
+      "ndvi": 0.597
     },
     {
       "year": 2021,
       "month": 6,
-      "ndvi": 0.78
+      "ndvi": 0.681
     },
     {
       "year": 2021,
       "month": 7,
-      "ndvi": 0.625
+      "ndvi": 0.549
     },
     {
       "year": 2021,
       "month": 8,
-      "ndvi": 0.717
+      "ndvi": 0.628
     },
     {
       "year": 2021,
       "month": 9,
-      "ndvi": 0.754
+      "ndvi": 0.665
     },
     {
       "year": 2021,
       "month": 10,
-      "ndvi": 0.673
+      "ndvi": 0.584
     },
     {
       "year": 2021,
       "month": 11,
-      "ndvi": 0.655
+      "ndvi": 0.581
     },
     {
       "year": 2021,
       "month": 12,
-      "ndvi": 0.11
+      "ndvi": 0.084
     },
     {
       "year": 2022,
       "month": 1,
-      "ndvi": 0.18
+      "ndvi": 0.156
     },
     {
       "year": 2022,
       "month": 2,
-      "ndvi": 0.316
+      "ndvi": 0.27
     },
     {
       "year": 2022,
       "month": 3,
-      "ndvi": 0.312
+      "ndvi": 0.28
     },
     {
       "year": 2022,
       "month": 4,
-      "ndvi": 0.378
+      "ndvi": 0.356
     },
     {
       "year": 2022,
       "month": 5,
-      "ndvi": 0.659
+      "ndvi": 0.568
     },
     {
       "year": 2022,
       "month": 6,
-      "ndvi": 0.785
+      "ndvi": 0.684
     },
     {
       "year": 2022,
       "month": 7,
-      "ndvi": 0.675
+      "ndvi": 0.586
     },
     {
       "year": 2022,
       "month": 8,
-      "ndvi": 0.748
+      "ndvi": 0.654
     },
     {
       "year": 2022,
       "month": 9,
-      "ndvi": 0.753
+      "ndvi": 0.66
     },
     {
       "year": 2022,
       "month": 10,
-      "ndvi": 0.781
+      "ndvi": 0.696
     },
     {
       "year": 2022,
       "month": 11,
-      "ndvi": 0.598
+      "ndvi": 0.519
     },
     {
       "year": 2022,
       "month": 12,
-      "ndvi": 0.386
+      "ndvi": 0.347
     },
     {
       "year": 2023,
       "month": 1,
-      "ndvi": 0.276
+      "ndvi": 0.258
     },
     {
       "year": 2023,
       "month": 2,
-      "ndvi": 0.328
+      "ndvi": 0.287
     },
     {
       "year": 2023,
       "month": 3,
-      "ndvi": 0.327
+      "ndvi": 0.28
     },
     {
       "year": 2023,
       "month": 4,
-      "ndvi": 0.337
+      "ndvi": 0.311
     },
     {
       "year": 2023,
       "month": 5,
-      "ndvi": 0.682
+      "ndvi": 0.602
     },
     {
       "year": 2023,
       "month": 6,
-      "ndvi": 0.731
+      "ndvi": 0.64
     },
     {
       "year": 2023,
       "month": 7,
-      "ndvi": 0.736
+      "ndvi": 0.64
     },
     {
       "year": 2023,
       "month": 8,
-      "ndvi": 0.701
+      "ndvi": 0.622
     },
     {
       "year": 2023,
       "month": 9,
-      "ndvi": 0.721
+      "ndvi": 0.636
     },
     {
       "year": 2023,
       "month": 10,
-      "ndvi": 0.734
+      "ndvi": 0.644
     },
     {
       "year": 2023,
       "month": 11,
-      "ndvi": 0.572
+      "ndvi": 0.506
     },
     {
       "year": 2023,
       "month": 12,
-      "ndvi": 0.348
-    },
-    {
-      "year": 2024,
-      "month": 1,
-      "ndvi": 0.243
-    },
-    {
-      "year": 2024,
-      "month": 2,
-      "ndvi": 0.282
-    },
-    {
-      "year": 2024,
-      "month": 3,
-      "ndvi": 0.332
-    },
-    {
-      "year": 2024,
-      "month": 4,
-      "ndvi": 0.554
-    },
-    {
-      "year": 2024,
-      "month": 5,
-      "ndvi": 0.729
-    },
-    {
-      "year": 2024,
-      "month": 6,
-      "ndvi": 0.788
-    },
-    {
-      "year": 2024,
-      "month": 7,
-      "ndvi": 0.135
-    },
-    {
-      "year": 2024,
-      "month": 8,
-      "ndvi": 0.68
-    },
-    {
-      "year": 2024,
-      "month": 9,
-      "ndvi": 0.754
-    },
-    {
-      "year": 2024,
-      "month": 10,
-      "ndvi": 0.755
-    },
-    {
-      "year": 2024,
-      "month": 11,
-      "ndvi": 0.554
-    },
-    {
-      "year": 2024,
-      "month": 12,
-      "ndvi": 0.342
-    },
-    {
-      "year": 2025,
-      "month": 1,
-      "ndvi": 0.284
-    },
-    {
-      "year": 2025,
-      "month": 2,
-      "ndvi": 0.285
-    },
-    {
-      "year": 2025,
-      "month": 3,
-      "ndvi": 0.316
-    },
-    {
-      "year": 2025,
-      "month": 4,
-      "ndvi": 0.432
-    },
-    {
-      "year": 2025,
-      "month": 5,
-      "ndvi": 0.731
-    },
-    {
-      "year": 2025,
-      "month": 6,
-      "ndvi": 0.76
-    },
-    {
-      "year": 2025,
-      "month": 7,
-      "ndvi": 0.719
-    },
-    {
-      "year": 2025,
-      "month": 8,
-      "ndvi": 0.709
-    },
-    {
-      "year": 2025,
-      "month": 9,
-      "ndvi": 0.747
-    },
-    {
-      "year": 2025,
-      "month": 10,
-      "ndvi": 0.786
-    },
-    {
-      "year": 2025,
-      "month": 11,
-      "ndvi": 0.621
-    },
-    {
-      "year": 2025,
-      "month": 12,
-      "ndvi": 0.377
-    },
-    {
-      "year": 2026,
-      "month": 1,
       "ndvi": 0.319
     },
     {
+      "year": 2024,
+      "month": 1,
+      "ndvi": 0.215
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "ndvi": 0.258
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "ndvi": 0.302
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "ndvi": 0.475
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "ndvi": 0.638
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "ndvi": 0.696
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "ndvi": 0.102
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "ndvi": 0.604
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "ndvi": 0.669
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "ndvi": 0.675
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "ndvi": 0.501
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "ndvi": 0.316
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "ndvi": 0.242
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "ndvi": 0.26
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "ndvi": 0.286
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "ndvi": 0.392
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "ndvi": 0.637
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "ndvi": 0.669
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "ndvi": 0.637
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "ndvi": 0.63
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "ndvi": 0.661
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "ndvi": 0.704
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "ndvi": 0.559
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "ndvi": 0.343
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "ndvi": 0.283
+    },
+    {
       "year": 2026,
       "month": 2,
-      "ndvi": 0.077
+      "ndvi": 0.071
     },
     {
       "year": 2026,
       "month": 3,
-      "ndvi": 0.32
+      "ndvi": 0.289
     },
     {
       "year": 2026,
       "month": 4,
-      "ndvi": 0.415
+      "ndvi": 0.375
     },
     {
       "year": 2026,
       "month": 5,
-      "ndvi": 0.68
+      "ndvi": 0.592
     }
   ]
 }

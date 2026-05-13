@@ -1,6 +1,6 @@
 {
   "site": "west_harlem \u00b7 7.5 ac",
-  "computed_at_utc": "2026-05-13T22:47:51.988216Z",
+  "computed_at_utc": "2026-05-13T23:05:16.368946Z",
   "epochs": [
     {
       "canopy_pct": 81.78,
@@ -35,16 +35,16 @@
       }
     },
     {
-      "year": 2026,
-      "canopy_pct": 85.77,
+      "year": 2025,
+      "canopy_pct": 74.0,
       "source": "Sentinel-2 NDVI > 0.55, July 2025",
       "phase": "baseline",
       "ecosystem": {
-        "stormwater_gal_yr": 189766,
-        "stormwater_usd_yr": 1882,
-        "carbon_seq_tC_yr": 6.24,
-        "energy_kwh_yr": 22193,
-        "air_pollution_lb_yr": 212
+        "stormwater_gal_yr": 163725,
+        "stormwater_usd_yr": 1624,
+        "carbon_seq_tC_yr": 5.38,
+        "energy_kwh_yr": 19148,
+        "air_pollution_lb_yr": 183
       }
     },
     {

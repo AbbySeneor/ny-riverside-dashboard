@@ -70,7 +70,8 @@ try:
 except Exception:
     SITE_BBOX = (-73.9560, 40.8240, -73.9445, 40.8330)
 
-GEE_PROJECT = os.environ.get("GEE_PROJECT", "treelyon-riverside")
+# Default matches service-account setup in scripts/run_pipeline_all_sites.sh; override with GEE_PROJECT.
+GEE_PROJECT = os.environ.get("GEE_PROJECT", "southern-tempo-387417")
 
 SOURCES = {
     "tnc_2021_zenodo": "https://zenodo.org/records/14053441",

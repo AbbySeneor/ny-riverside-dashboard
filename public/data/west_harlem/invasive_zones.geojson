@@ -3,50 +3,38 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "name": "Goatham 2023-24 cleared zone",
-        "kind": "goatham",
-        "proxy_source": "rpc_management_context",
-        "method": "RPC Goatham clearing footprint; Sentinel-2 invasive phenology proxy found no matching patches."
-      },
       "geometry": {
+        "geodesic": false,
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -73.95428,
-              40.82518
+              -73.95712953169085,
+              40.822051624715
             ],
             [
-              -73.95345,
-              40.82542
+              -73.95703970016244,
+              40.822051624715
             ],
             [
-              -73.95248,
-              40.8261
+              -73.95703970016244,
+              40.822141456243415
             ],
             [
-              -73.95178,
-              40.8266
+              -73.95712953169085,
+              40.822141456243415
             ],
             [
-              -73.95298,
-              40.8274
-            ],
-            [
-              -73.95398,
-              40.8266
-            ],
-            [
-              -73.95478,
-              40.82592
-            ],
-            [
-              -73.95428,
-              40.82518
+              -73.95712953169085,
+              40.822051624715
             ]
           ]
         ]
+      },
+      "id": "-823287+454429",
+      "properties": {
+        "count": 1,
+        "label": 1
       }
     }
   ]
