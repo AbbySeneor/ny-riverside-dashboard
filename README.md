@@ -41,11 +41,15 @@ and the map tabs stay empty until you run the pipeline and `npm run sync:data` a
 |---|---|---|---|
 | `01_download_sources.py` | — | `data-prep/raw/*` | Internet |
 | `02_clip_to_site.py` | `raw/*`, `boundary/*` | `out/trees_2021.geojson`, clipped rasters | GDAL |
-| `03_tree_canopy_stats.py` | clipped rasters | `out/canopy_trajectory.json` | rasterio |
+| `03_tree_canopy_stats.py` | clipped rasters, `_s2_canopy_2026.json` if present | `out/canopy_trajectory.json` | rasterio |
 | `04_slope_analysis.py` | NYC 1-ft DEM | `out/rasters/slope.png` + buckets | rasterio, PIL |
 | `05_gee_thermal.py` | Landsat 8/9 C2L2 (GEE) | `out/lst_zones.json`, `out/rasters/lst.png` | earthengine-api |
-| `06_gee_ndvi.py` | Sentinel-2 SR (GEE) | `out/ndvi_timeseries.json`, `out/invasive_zones.geojson` | earthengine-api |
+| `06_gee_ndvi.py` | Sentinel-2 SR (GEE) | `out/ndvi_timeseries.json`, `out/invasive_zones.geojson`, `_s2_canopy_2026.json` | earthengine-api |
+| `03_tree_canopy_stats.py` *(re-run)* | + `_s2_canopy_2026.json` | refreshes `out/canopy_trajectory.json` with S2 baseline | rasterio |
 | `07_compute_scorecard.py` | all above | `out/scorecard.json`, `out/ecosystem_services.json` | — |
+| `08_classify_tree_health.py` | trees + Sentinel-2 (GEE) | updates `out/trees_2021.geojson` health fields | earthengine-api |
+
+After step 6, `run_all.sh` automatically re-runs step 3 so the trajectory includes the Sentinel-2 canopy epoch.
 
 ## Data sources (all open)
 
@@ -55,9 +59,9 @@ and the map tabs stay empty until you run the pipeline and `npm run sync:data` a
   forestry tree points (ForMS); Heat Vulnerability Index.
 - **NYC 1-ft LiDAR-derived DEM** — for slope and root-zone analysis.
 - **Sentinel-2 SR Harmonized** (via Earth Engine) — monthly NDVI, invasive
-  phenology proxy, 2026 canopy estimate.
+  phenology proxy, baseline canopy estimate from the latest complete July NDVI.
 - **Landsat 8/9 Collection 2 Level 2** (via Earth Engine) — ST_B10 land
-  surface temperature, July+August median 2020–2025.
+  surface temperature, July+August median 2020 through latest year (≥2026).
 - **NAC Forest Management Framework** — scorecard thresholds (Rapid Site
   Assessment methodology).
 - **i-Tree Eco** — per-canopy-acre ecosystem service unit values, USFS-NRS RB-117.

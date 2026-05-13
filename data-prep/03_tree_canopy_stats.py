@@ -130,14 +130,15 @@ def main():
             print(f"   2010 canopy: {canopy_2010_pct:.2f}% "
                   f"(loss '10→'17: {loss:,} px, gain: {gain:,} px)")
 
-    # 2026 — Sentinel-2 NDVI proxy. Computed in 06_gee_ndvi.py and merged here.
+    # Sentinel-2 NDVI proxy — year from 06_gee_ndvi output (most recent July)
     s2_path = SITE_OUT / "_s2_canopy_2026.json"
     if s2_path.exists():
         s2 = json.loads(s2_path.read_text())
+        s2_year = int(s2.get("year", 2026))
         epochs.append({
-            "year": 2026,
+            "year": s2_year,
             "canopy_pct": s2["canopy_pct_estimated"],
-            "source": "Sentinel-2 NDVI > 0.55 threshold, July max",
+            "source": s2.get("source") or "Sentinel-2 NDVI > 0.55 threshold, July max",
             "phase": "baseline",
         })
 

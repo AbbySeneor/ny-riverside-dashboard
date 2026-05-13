@@ -4,7 +4,7 @@
 
 For each LiDAR tree centroid:
   • Buffer (m) = max(crown diameter / 2 + 15 m, 20 m) ≈ crown + ~3 Sentinel-2 pixels.
-  • July-only S2_SR_HARMONIZED 2019–2024, pixel-wise max NDVI composite, reduceRegions (not per-tree loops).
+  • July-only S2_SR_HARMONIZED through latest calendar year (2019–present), pixel-wise max NDVI composite, reduceRegions (not per-tree loops).
 
 Writes health_class (healthy / stressed / critical), crown_diameter (m), and s2_ndvi_july_max on OUTPUTS["trees"].
 """
@@ -14,6 +14,7 @@ import json
 import math
 import os
 import sys
+from datetime import datetime
 
 import ee
 import geopandas as gpd
@@ -116,10 +117,11 @@ def main() -> None:
 
     roi = ee.FeatureCollection(feats).geometry()
 
+    health_end_year = max(2026, datetime.now().year)
     s2 = (
         ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED")
         .filterBounds(roi)
-        .filterDate("2019-01-01", "2024-12-31")
+        .filterDate("2019-01-01", f"{health_end_year}-12-31")
         .filter(ee.Filter.calendarRange(7, 7, "month"))
         .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", 80))
     )
@@ -178,7 +180,9 @@ def main() -> None:
     gdf["s2_ndvi_july_max"] = ndvi_col
     gdf["health_class"] = health_col
     gdf["crown_diameter"] = crown_col
-    gdf["health_method"] = "Sentinel-2 SR Harmonized · July 2019–2024 max NDVI · reduceRegions"
+    gdf["health_method"] = (
+        f"Sentinel-2 SR Harmonized · July 2019–{health_end_year} max NDVI · reduceRegions"
+    )
 
     gdf.to_file(trees_path, driver="GeoJSON")
     print(f"✓ {SITE_ID}: classified {len(gdf)} trees → {trees_path.relative_to(ROOT)}")

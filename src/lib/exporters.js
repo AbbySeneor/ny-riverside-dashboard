@@ -214,7 +214,7 @@ export async function exportPDF(scorecard, ecosystem, treeSummary, lstZones, das
     ['Canopy cover 2010, 2017, 2021', '6-inch land cover from NYC Open Data + TNC 2021'],
     ['2017→2021 canopy change', 'TNC × UVM SAL pixel-level change raster'],
     ['Site slope', 'NYC 1-foot LiDAR-derived bare-earth DEM (NYS GIS Clearinghouse)'],
-    ['Landsat thermal (LST)', 'Landsat 8/9 C2L2 ST_B10, July+August median 2020-2025'],
+    ['Landsat thermal (LST)', 'Landsat 8/9 C2L2 ST_B10, July+August median 2020 to latest year (05_gee_thermal.py)'],
     ['NDVI time series', 'Sentinel-2 SR Harmonized, monthly composites'],
     ['Invasive zone proxy', 'Sentinel-2 NDVI phenology (porcelain-berry / English ivy signature)'],
     ['Ecosystem services valuation', 'i-Tree Eco unit values (USFS-NRS RB-117) × computed canopy'],

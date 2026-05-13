@@ -14,6 +14,7 @@ Writes:
   out/ecosystem_services.json
 """
 import json
+from datetime import datetime
 from pathlib import Path
 import geopandas as gpd
 from shapely.geometry import shape
@@ -68,8 +69,9 @@ def main():
     baseline = next((e for e in canopy_traj["epochs"]
                       if e.get("phase") == "baseline"), None)
     if not baseline:
-        # Fall back to most recent historical
-        hist = [e for e in canopy_traj["epochs"] if e.get("year", 0) <= 2026]
+        # Fall back to most recent historical (include latest S2 year)
+        hist_year_cap = max(2026, datetime.now().year + 1)
+        hist = [e for e in canopy_traj["epochs"] if e.get("year", 0) <= hist_year_cap]
         baseline = hist[-1] if hist else {"canopy_pct": None}
 
     target_y3 = next((e for e in canopy_traj["epochs"]
@@ -198,7 +200,7 @@ def main():
         "compensatory_value_total_usd":
             round(tree_summary.get("count", 0) * ITREE_VALUES["compensatory_dollar_per_tree"]),
         "method": "i-Tree Eco per-canopy-acre (USFS-NRS RB-117) × computed canopy area",
-        "monetary_year": 2024,
+        "monetary_year": datetime.now().year,
     }
     services["total_annual_usd"] = sum(
         v.get("usd_per_year", 0) for v in services.values() if isinstance(v, dict)
@@ -207,8 +209,9 @@ def main():
     print(f"✓ Ecosystem services → {OUTPUTS['ecosystem'].relative_to(SITE_OUT.parent)}")
 
     # === Print human summary ===
+    by = baseline.get("year") or datetime.now().year
     print("\n" + "=" * 60)
-    print(f"  {SITE_ID.upper()} · BASELINE 2026")
+    print(f"  {SITE_ID.upper()} · BASELINE {by}")
     print("=" * 60)
     for m in scorecard["metrics"]:
         b = m.get("baseline")

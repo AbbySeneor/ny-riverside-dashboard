@@ -1,6 +1,6 @@
 {
   "site": "west_harlem \u00b7 7.5 ac",
-  "computed_at_utc": "2026-05-12T22:14:18.674883Z",
+  "computed_at_utc": "2026-05-13T22:47:52.227872Z",
   "framework": "NAC Forest Management Framework \u2014 Rapid Site Assessment compatible",
   "metrics": [
     {
@@ -11,7 +11,7 @@
       "target": 75,
       "max": 100,
       "inverse": false,
-      "source": "Sentinel-2 NDVI > 0.55 threshold, July max"
+      "source": "Sentinel-2 NDVI > 0.55, July 2025"
     },
     {
       "metric": "Invasive dominance (proxy)",

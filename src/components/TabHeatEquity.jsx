@@ -66,7 +66,7 @@ export default function TabHeatEquity({ data }) {
               fontFamily: FONTS.mono, fontSize: 10, letterSpacing: '0.1em',
             }}>
               <div style={{ color: PALETTE.sage, fontSize: 9, marginBottom: 4 }}>
-                LANDSAT 8/9 · ST_B10 · JUL MEDIAN 2020-2025
+                LANDSAT 8/9 · ST_B10 · JUL-AUG MEDIAN (2020-PRESENT)
               </div>
               <div>BLUE ← COOL · WARM → RED</div>
             </div>

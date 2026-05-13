@@ -1,9 +1,9 @@
 """
-06_gee_ndvi.py — Sentinel-2 NDVI time series and 2026 baseline canopy.
+06_gee_ndvi.py — Sentinel-2 NDVI time series and current-year baseline canopy.
 
 Outputs:
-  • out/ndvi_timeseries.json   — monthly mean NDVI for the site, 2017-2026
-  • out/_s2_canopy_2026.json   — current-year canopy % estimate
+  • out/ndvi_timeseries.json   — monthly mean NDVI for the site, 2017 through latest year
+  • out/_s2_canopy_2026.json   — current-year canopy % estimate (filename legacy; year inside JSON)
                                   (read by 03_tree_canopy_stats.py)
 
 Setup:
@@ -94,15 +94,18 @@ def main():
     boundary = gpd.read_file(PROJECT_BOUNDARY)
     aoi = ee.Geometry(boundary.geometry.iloc[0].__geo_interface__)
 
-    # === Monthly mean NDVI 2017–2026 ===
-    print(f"→ Computing monthly NDVI 2017–2026...")
+    ndvi_end_year = max(2026, datetime.utcnow().year)
+    ndvi_end = f"{ndvi_end_year}-12-31"
+
+    # === Monthly mean NDVI 2017 through latest year ===
+    print(f"→ Computing monthly NDVI 2017–{ndvi_end_year}...")
     s2 = (ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED")
           .filterBounds(aoi)
-          .filterDate("2017-01-01", "2026-12-31")
+          .filterDate("2017-01-01", ndvi_end)
           .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", 40)))
 
     months = []
-    for year in range(2017, 2027):
+    for year in range(2017, ndvi_end_year + 1):
         for month in range(1, 13):
             if year == 2026 and month > datetime.utcnow().month:
                 break
@@ -137,11 +140,11 @@ def main():
     }, indent=2))
     print(f"✓ NDVI time series → {OUTPUTS['ndvi_ts'].relative_to(SITE_OUT.parent)}")
 
-    # === 2026 canopy % estimate from peak NDVI ===
-    print(f"\n→ Estimating 2026 canopy from July NDVI...")
+    # === Baseline canopy % from most recent complete July NDVI ===
     peak_year = datetime.utcnow().year
     if datetime.utcnow().month < 8:
         peak_year -= 1
+    print(f"\n→ Estimating baseline canopy from July NDVI (peak year {peak_year})...")
     ndvi_peak = monthly_ndvi_composite(
         s2,
         ee.Date.fromYMD(peak_year, 7, 1),
@@ -160,10 +163,10 @@ def main():
             maxPixels=1e9,
         ).get("nd").getInfo()
         canopy_pct = round(canopy_area / total_area * 100, 2) if canopy_area else 0
-    print(f"   2026 canopy estimate: {canopy_pct}% ({(canopy_area or 0):.0f} m² / {total_area:.0f} m²)")
+    print(f"   Baseline canopy estimate ({peak_year}): {canopy_pct}% ({(canopy_area or 0):.0f} m² / {total_area:.0f} m²)")
 
     (SITE_OUT / "_s2_canopy_2026.json").write_text(json.dumps({
-        "year": 2026,
+        "year": peak_year,
         "canopy_pct_estimated": canopy_pct,
         "canopy_m2": round(canopy_area or 0, 1),
         "total_m2": round(total_area, 1),

@@ -37,6 +37,9 @@ python 05_gee_thermal.py
 echo "→ STEP 6/8: Sentinel-2 NDVI + invasive proxy (Earth Engine)"
 python 06_gee_ndvi.py
 
+echo "→ STEP 6b/8: Re-merge canopy trajectory (adds S2 baseline from step 6)"
+python 03_tree_canopy_stats.py
+
 echo "→ STEP 7/8: Scorecard + ecosystem services"
 python 07_compute_scorecard.py
 

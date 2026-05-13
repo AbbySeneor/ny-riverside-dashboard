@@ -2,7 +2,7 @@
 05_gee_thermal.py — Landsat 8/9 LST composite via Earth Engine.
 
 Computes:
-  • July median LST 2020-2025 (in °F) clipped to site bbox
+  • July–August median LST 2020 through latest full year (≥2026) in °F, clipped to site bbox
   • Mean LST in 4 zones: Hudson, canopy interior, Riverside Drive, Henry Hudson Pkwy
   • LST raster exported as colorized PNG for Mapbox
 
@@ -17,6 +17,7 @@ Run:
 import json
 import io
 import urllib.request
+from datetime import datetime
 from pathlib import Path
 import ee
 from PIL import Image
@@ -75,14 +76,19 @@ def main():
     aoi = ee.Geometry.Rectangle([west - 0.005, south - 0.003,
                                   east + 0.005, north + 0.003])
 
-    # Landsat 8 + 9 Collection 2 Level 2, July+August median 2020-2025
+    lst_end_year = max(2026, datetime.now().year)
+    lst_start = "2020-01-01"
+    lst_end = f"{lst_end_year}-12-31"
+    print(f"→ Landsat LST composite: {lst_start} … {lst_end} (July–August median)")
+
+    # Landsat 8 + 9 Collection 2 Level 2, July+August median
     L8 = ee.ImageCollection("LANDSAT/LC08/C02/T1_L2")
     L9 = ee.ImageCollection("LANDSAT/LC09/C02/T1_L2")
 
     composite = (L8.merge(L9)
         .filterBounds(aoi)
         .filter(ee.Filter.calendarRange(7, 8, "month"))
-        .filterDate("2020-01-01", "2025-12-31")
+        .filterDate(lst_start, lst_end)
         .map(fahrenheit)
         .median()
         .clip(aoi))
@@ -151,8 +157,10 @@ def main():
             results["henry_hudson_pkwy"] - results["canopy_interior"], 1
         )
 
-    results["composite"] = "Landsat 8/9 C2L2, ST_B10, July+August median 2020-2025"
-    results["computed_at_utc"] = __import__("datetime").datetime.utcnow().isoformat() + "Z"
+    results["composite"] = (
+        f"Landsat 8/9 C2L2, ST_B10, July+August median {lst_start[:4]}–{lst_end_year}"
+    )
+    results["computed_at_utc"] = datetime.utcnow().isoformat() + "Z"
 
     OUTPUTS["lst_zones"].write_text(json.dumps(results, indent=2))
     print(f"\n✓ LST zones → {OUTPUTS['lst_zones'].relative_to(SITE_OUT.parent)}")
